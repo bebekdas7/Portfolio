@@ -1,0 +1,429 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+.hero {
+  background: #999d9e;
+  width: 100%;
+  position: relative;
+}
+.move {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 15rem;
+  z-index: 9;
+  gap: 3vw;
+  overflow: hidden;
+  padding: 0 1vw;
+  white-space: nowrap;
+}
+.marque {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  transform: translateX(-200%);
+}
+.marque h1 {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 10rem;
+  font-weight: 400;
+}
+.hello {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.hello h1 {
+  position: absolute;
+}
+.hello h1 div {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background: white;
+}
+.nav {
+  height: 10vh;
+}
+.nav-name {
+  /* border: 1px solid black; */
+  width: 8.9rem;
+  height: 2.5rem;
+  color: #ffffff;
+  font-weight: 600;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.nav-name p {
+  flex-shrink: 0;
+  transition: transform 0.4s ease-in-out;
+}
+.nav-name:hover p {
+  transform: translateX(-140px);
+}
+
+.nav-item-box {
+  height: 2.5rem;
+  width: 20%;
+}
+.nav-item {
+  /* border: 1px solid black; */
+  width: 33.3%;
+  height: 100%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0 8px;
+  border: none;
+  background: transparent;
+}
+
+.landing2 {
+  /* border: 1px solid black; */
+  height: 100vh;
+}
+.landing-left {
+  /* border: 1px solid red; */
+  width: 20%;
+}
+.landing-left-first {
+  /* border: 1px solid black; */
+  width: 14rem;
+  height: 6rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  background: #1c1d20;
+  overflow: hidden;
+  padding: 1rem 1rem;
+  margin-bottom: 6rem;
+}
+.landing-left-text {
+  /* border: 1px solid white; */
+  height: 4rem;
+  width: 6rem;
+  margin-right: 1rem;
+  color: white;
+  line-height: 1.3rem;
+}
+.landing-left-text p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+.landing-left-gif {
+  /* border: 1px solid black; */
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.2rem;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-left-gif img {
+  width: 65%;
+  height: 65%;
+  object-fit: cover;
+}
+
+.landing-center {
+  width: 50%;
+}
+.landing-center img {
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+}
+.landing-right {
+  /* border: 1px solid orange; */
+  width: 30%;
+  padding-bottom: 10rem;
+}
+.landing-right h2 {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+.southeast-i {
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+/* ------------------about section--------------------- */
+.about-main {
+  /* border: 1px solid black; */
+  height: 65vh;
+  position: relative;
+}
+.about-main-button {
+  border: none;
+  outline: none;
+  position: absolute;
+  bottom: -10px;
+  right: 20vw;
+  width: 12vw;
+  height: 12vw;
+  background: #1c1d20;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 2;
+}
+.about-main-head {
+  /* border: 1px solid black; */
+  width: 45%;
+  height: 30vh;
+}
+.about-main-head h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #1c1d20;
+}
+.about-main-body {
+  /* border: 1px solid black; */
+  width: 25%;
+  height: 30vh;
+}
+
+/* -----------projects--------------- */
+.projects {
+  /* border: 1px solid grey; */
+  position: relative;
+  /* height: 100vh; */
+}
+.booklx-card {
+  position: absolute;
+  /* border: 1px solid black; */
+  top: 280px;
+  left: -300px;
+  width: 30%;
+  height: 35%;
+  z-index: 3;
+  opacity: 0;
+  background: green;
+}
+.booklx-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.futurechaos-card {
+  position: absolute;
+  top: 455px;
+  left: -300px;
+  width: 30%;
+  height: 35%;
+  z-index: 3;
+  opacity: 0;
+}
+.futurechaos-card img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+.blog-card {
+  position: absolute;
+  top: 216px;
+  left: -300px;
+  width: 30%;
+  height: 35%;
+  z-index: 3;
+  opacity: 0;
+}
+.blog-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.jewellery-card {
+  position: absolute;
+  top: 430px;
+  left: -300px;
+  width: 30%;
+  height: 35%;
+  z-index: 3;
+  opacity: 0;
+}
+.jewellery-card img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+.projects-heading {
+  border-bottom: 1px solid lightgray;
+  width: 85%;
+  padding-left: 8vw;
+  height: 15vh;
+  color: grey;
+  font-size: 0.65rem;
+}
+.projects-item {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+  background: transparent;
+  width: 85%;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  height: 26vh;
+}
+.projects-item h1 {
+  color: #1c1d20;
+  font-size: 5vw;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.projects-item p {
+  color: #1c1d20;
+  font-size: 1.2vw;
+}
+
+.projects-item:hover > h1 {
+  color: grey;
+  font-size: 5.1vw;
+  transform: translateX(-10%);
+}
+.projects-item:hover > p {
+  color: grey;
+  font-size: 1.3vw;
+  transform: translateX(10%);
+}
+
+/* {------------------contact----------------} */
+
+.contacts-main {
+  /* border: 1px solid rgb(255, 255, 255); */
+  height: 100vh;
+  background: #1c1d20;
+}
+.contacts {
+  /* border: 1px solid wheat; */
+  width: 70vw;
+  height: 70vh;
+}
+.contact-img {
+  color: white;
+}
+.contact-img div {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.contact-img div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.motivation {
+  border-bottom: 1px solid grey;
+  height: 60%;
+  position: relative;
+}
+.motivation-button {
+  position: absolute;
+  color: white;
+  bottom: -10vh;
+  right: 10vw;
+  width: 12vw;
+  height: 12vw;
+  background: rgb(55, 78, 195);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.motivation-button:hover {
+  background: rgb(55, 78, 195);
+}
+.motivation h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 400;
+}
+.contact-details {
+  /* border: 1px solid orange; */
+  height: 40%;
+}
+.email {
+  border: 1px solid grey;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  border-radius: 10vw;
+}
+.number {
+  color: white;
+  border: 1px solid grey;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  border-radius: 10vw;
+}
+
+.footer {
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 12vh;
+}
+.footer-data {
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 25%;
+}
+.version {
+  /* border: 1px solid white; */
+  /* width: 50%; */
+  height: 100%;
+  padding-left: 2vw;
+}
+.version p:nth-child(1) {
+  color: grey;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.version p:nth-child(2) {
+  font-size: 0.9rem;
+}
+
+.localtime {
+  /* border: 1px solid white; */
+  width: 50%;
+  height: 100%;
+  padding-left: 2vw;
+}
+.localtime p:nth-child(1) {
+  color: grey;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.localtime p:nth-child(2) {
+  font-size: 0.9rem;
+}
+.footer-socials {
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 25%;
+  transition: all 0.3s ease-in-out;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.footer a:hover {
+  border-bottom: 1px solid white;
+}
