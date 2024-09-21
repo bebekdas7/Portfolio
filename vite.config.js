@@ -3,8 +3,11 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
+  define: {
+    'process.env.NODE_ENV': '"production"'
+  },
   server: {
-    host: '0.0.0.0',           // Bind to 0.0.0.0 for external access
-    port: process.env.PORT || 3000  // Use the PORT environment variable or default to 3000
+    host: '0.0.0.0',
+    port: process.env.PORT || 3000
   }
 })
